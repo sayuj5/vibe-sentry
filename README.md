@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔥 Vibe Sentry: Cyber Learning Hub & IDS Dashboard
 
-## Getting Started
+Vibe Sentry is a state-of-the-art **Intrusion Detection System (IDS)** dashboard and **Cybersecurity Academy**, designed for the modern security professional. It combines high-fidelity visual telemetry with an interactive educational curriculum, all wrapped in a premium "Fiery/Smoky" aesthetic.
 
-First, run the development server:
+![Vibe Sentry Dashboard](public/dashboard_preview.png) *(Place a screenshot here if available)*
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎨 Design Philosophy
+- **"Fiery/Smoky" UI**: Built from intent, not a template. Deep oranges, charcoal blacks, and glassmorphic elements create an immersive, high-stakes operational environment.
+- **Dynamic Interaction**: Every element is alive, from the holographic map blips to the terminal-style scrolling logs.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 📡 Defensive Telemetry
+- **Holographic Threat Map**: A real-time geospatial map featuring radar sweeps and live "threat blips" simulating global security events.
+- **Terminal-Style Live Feed**: High-performance scrolling logs with color-coded severity (Critical → High → Medium → Low).
+- **Enterprise Security**: Production-ready from day one with Rate Limiting, XSS Sanitization, and hardened security headers (CSP, HSTS).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🎓 Cyber Academy
+- **Interactive Modules**: Hands-on lessons on **XSS Fundamentals**, **SQLi Defense**, and **Rate Limiting Theory**.
+- **Defense Code Integration**: Each module showcases actual production code snippets used in the platform's defense layers.
+- **Axiom-Sensei AI Mentor**: A Gemini-powered Senior Security Architect that evaluates technical accuracy, provides career roadmaps, and offers "Sensei Insights" during assessments.
+- **Analyst Certification**: A dedicated quiz engine to validate mastery of the curriculum.
 
-## Learn More
+### 🏆 Gamification & Feedback
+- **Session Leaderboard**: Track technical mastery scores for the current session.
+- **Live Intelligence Ingestion**: A feedback terminal that pipes student reports directly into the live SOC telemetry feed via `BroadcastChannel` API.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
+- **Core**: Next.js 16 + React 19
+- **Styling**: Tailwind CSS v4 (Fiery/Smoky Custom Design System)
+- **Animations**: Framer Motion
+- **AI Engine**: Google Gemini Pro (Axiom-Sensei Core)
+- **Deployment**: Google Cloud Run via Docker (Standalone Output)
+- **State**: React Local State + LocalStorage (Zero Database Requirement)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ☁️ Cloud Architecture
+The app is optimized for **Always-On Cloud Deployment** on Google Cloud Run. By utilizing `min-instances: 1`, we ensure zero cold starts, providing a seamless, real-time experience for security analysts worldwide.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💻 Getting Started
 
-## Deploy on Vercel
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/sayuj5/vibe-sentry.git
+   cd vibe-sentry
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Configure Environment:**
+   Create a `.env.local` file:
+   ```env
+   GOOGLE_GENERATIVE_AI_API_KEY=your_gemini_api_key_here
+   ```
+
+4. **Run the Development Server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Build for Production:**
+   ```bash
+   npm run build
+   npm start
+   ```
+
+## 🔒 Security Notice
+This dashboard is a simulation intended for educational purposes. While the security middleware (Rate Limiting, Sanitization) is production-ready, always conduct a full security audit before deploying to critical enterprise environments.
+
+---
+*Built with intent by Sayuj.*
