@@ -2,7 +2,16 @@
 
 Vibe Sentry is a state-of-the-art **Intrusion Detection System (IDS)** dashboard and **Cybersecurity Academy**, designed for the modern security professional. It combines high-fidelity visual telemetry with an interactive educational curriculum, all wrapped in a premium "Fiery/Smoky" aesthetic.
 
-![Vibe Sentry Dashboard](public/dashboard_preview.png) *(Place a screenshot here if available)*
+## 🖼️ Visual Previews
+
+### 1. Command Center (Landing)
+![Landing Page](public/hero_preview.png)
+
+### 2. Intelligence Hub (Academy)
+![Academy Hub](public/academy_preview.png)
+
+### 3. Real-Time SOC Dashboard
+![SOC Dashboard](public/dashboard_preview.png)
 
 ## 🎨 Design Philosophy
 - **"Fiery/Smoky" UI**: Built from intent, not a template. Deep oranges, charcoal blacks, and glassmorphic elements create an immersive, high-stakes operational environment.
